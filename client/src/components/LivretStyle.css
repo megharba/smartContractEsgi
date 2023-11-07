@@ -1,83 +1,83 @@
 /* Style général */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Style pour les champs de formulaire */
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  /* Style pour les boutons */
-  button[type="button"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  button[type="button"]:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Style pour la liste des enfants */
-  .child-list {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .child-item {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  /* Style pour les messages d'erreur */
-  .error-message {
-    color: #ff0000;
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  
-  /* Style pour les messages de succès */
-  .success-message {
-    color: #00a000;
-    font-size: 14px;
-    margin-top: 5px;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style pour les champs de formulaire */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style pour les boutons */
+button[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style pour la liste des enfants */
+.child-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.child-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style pour les messages de succès */
+.success-message {
+  color: #00a000;
+  font-size: 14px;
+  margin-top: 5px;
+}

@@ -1,153 +1,60 @@
 html {
-  font-size: 10px;
-  font-family: sans-serif;
+  font-size: 10px; /* Sets the base font size for using REM units */
+  font-family: 'Arial', sans-serif; /* Use a fallback font in case the primary one fails to load */
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Content-box by default includes padding and border in the width, we want border-box */
+}
+
+body {
+  background: #f5f5f5; /* Light gray background to reduce contrast */
+  padding: 2rem; /* Give some space around the form */
 }
 
 #App {
-  width: 100%;
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
-  --primary-color: #1266cc;
-  --secondary-color: #f96400;
-  --flash-color: rgb(89, 255, 0);
-  --gray: #999;
-  --light-gray: #e0e0e0;
-  --dark-gray: #777;
+  font-size: 1.6rem; /* Base font size for the app */
 }
 
-#App .container {
-  width: 40%;
-  min-width: 60rem;
-  max-width: 75rem;
-  height: 100%;
+.container {
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+  background: #fff; /* White background for the form area */
+  padding: 2rem;
+  border-radius: 8px; /* Rounded corners for the form container */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
 }
 
-code {
-  display: block;
-  white-space: pre-wrap;
-  padding: 1.2rem 2rem;
-  border-radius: 1rem;
-  background-color: var(--light-gray);
+input[type="text"], input[type="date"] {
+  width: 100%; /* Full width */
+  padding: 0.8rem; /* Comfortable padding inside inputs */
+  margin-bottom: 1.5rem; /* Space between inputs */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Slightly rounded corners for inputs */
+  font-size: 1.4rem; /* Larger font size for better readability */
+}
+
+button {
+  padding: 0.8rem 2rem; /* Larger clickable area */
+  margin-right: 1rem; /* Space between buttons */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Match input border-radius */
+  background-color: var(--primary-color);
+  color: #fff;
   font-size: 1.4rem;
+  cursor: pointer; /* Pointer to signify clickability */
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
 }
 
-code span {
-  transition: all 0.3s;
+button:hover {
+  background-color: var(--secondary-color);
 }
 
-code span.primary-color {
-  color: var(--primary-color);
-}
-
-code span.secondary-color {
-  color: var(--secondary-color);
-}
-
-code span.dim-color {
-  color: var(--gray);
-}
-
-code span.flash {
-  background-color: var(--flash-color);
-}
-
-details {
-  margin: 1.6rem 0;
-  padding: 0.5rem 2rem 0.5rem 0;
-  border: 1px solid var(--light-gray);
-  border-radius: 1rem;
-}
-
-details :not(summary, span) {
-  margin-left: 2.55rem;
-}
-
-details summary {
-  padding: 1.2rem;
-  cursor: pointer;
-}
-
-p,
-details code {
-  margin-top: 1rem;
-  margin-bottom: 1.4rem;
-}
-
-p {
-  line-height: 2.6rem;
-}
-
-p span.code {
-  font-family: monospace;
-  color: var(--gray);
-}
-
-hr {
-  margin: 4rem 0;
-}
-
-#App .container .welcome h1 {
-  padding-top: 7.5rem;
-  font-size: 2.6rem;
-}
-
-#App .container .demo .contract-container {
-  display: flex;
-}
-
-#App .container .demo .contract-container code {
-  min-width: 42rem;
-  border-radius: 1rem 0 0 1rem;
-}
-
-#App .container .demo .contract-container .btns {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0 1rem;
-  background-color: var(--gray);
-  border-radius: 0 1rem 1rem 0;
-}
-
-#App .container .demo .contract-container .btns > * {
-  width: 12rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-  background-color: var(--light-gray);
-  border: none;
-  font-size: 1.2rem;
-  font-family: monospace;
-  cursor: pointer;
-}
-
-#App .container .demo .contract-container .btns > *:hover {
-  background-color: var(--dark-gray);
-}
-
-#App .container .demo .contract-container .btns .input-btn input {
-  width: 4rem;
-  text-align: center;
-  font-family: monospace;
-  font-size: 1.2rem;
-}
-
-#App .container footer {
-  padding-bottom: 7.5rem;
-}
-
-#App .container footer a {
-  display: inline-block;
-  margin: 2rem 1rem 0 0;
+button:last-child {
+  margin-right: 0; /* Last button should not have right margin */
 }
